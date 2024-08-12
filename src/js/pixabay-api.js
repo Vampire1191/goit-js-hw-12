@@ -5,7 +5,6 @@ import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const apiKey = '45360180-cc3ae961e731e1f4ede944c53';
-
 async function fetchImagesAndUpdateDOM(searchTerm, currentPage) {
   const url = `https://pixabay.com/api/?key=${apiKey}&q=${encodeURIComponent(
     searchTerm

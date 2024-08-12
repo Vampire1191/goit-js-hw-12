@@ -1,11 +1,16 @@
 import iziToast from 'izitoast';
+
 import 'izitoast/dist/css/iziToast.min.css';
+
 import SimpleLightbox from 'simplelightbox';
+
 import 'simplelightbox/dist/simple-lightbox.min.css';
+
 const lightbox = new SimpleLightbox('.gallery a');
 
 export function renderImages(images) {
   const gallery = document.getElementById('gallery');
+
   if (images.length === 0) {
     showErrorMessage();
     return;
@@ -53,6 +58,7 @@ export function renderImages(images) {
     listItem.appendChild(info);
     gallery.appendChild(listItem);
   });
+
   lightbox.refresh();
 }
 
